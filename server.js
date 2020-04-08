@@ -33,7 +33,7 @@ app.use('/login',loginRouter);
 //integrating socketio
 socket = io(http);
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 //database connection
 const Chat = require("./models/Chat");
